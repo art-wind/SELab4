@@ -2,9 +2,9 @@ package responders;
 
 import cn.edu.fudan.se.messager.Messager;
 
-public class StudentCourseSelectByResponder extends Messager {
+public class StudentCourseSelectByStudentIdResponder extends Messager {
 
-	public StudentCourseSelectByResponder(String topic, String consumerGroup,
+	public StudentCourseSelectByStudentIdResponder(String topic, String consumerGroup,
 			String producerGroup) {
 		super(topic, consumerGroup, producerGroup);
 		// TODO Auto-generated constructor stub

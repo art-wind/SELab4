@@ -2,9 +2,9 @@ package invokers;
 
 import cn.edu.fudan.se.messager.Messager;
 
-public class StudentCourseSelectByInvoker extends Messager {
+public class StudentCourseSelectByStudentIdInvoker extends Messager {
 
-	public StudentCourseSelectByInvoker(String topic, String consumerGroup,
+	public StudentCourseSelectByStudentIdInvoker(String topic, String consumerGroup,
 			String producerGroup) {
 		super(topic, consumerGroup, producerGroup);
 		// TODO Auto-generated constructor stub
