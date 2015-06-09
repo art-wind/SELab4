@@ -1,6 +1,6 @@
 package util;
 
-public class CourseInfo {
+public class Course {
 	private String courseId;
 	private String schoolName;
 	private String courseName;
@@ -8,11 +8,11 @@ public class CourseInfo {
 	private int credit;
 	private String location;
 	private Time time;
-	public CourseInfo(){
+	public Course(){
 		
 	}
 	
-	public CourseInfo(String courseId, String schoolName, String courseName, 
+	public Course(String courseId, String schoolName, String courseName, 
 			String teacherName, int credit, String location, Time time){
 		this.courseId = courseId;
 		this.schoolName = schoolName;

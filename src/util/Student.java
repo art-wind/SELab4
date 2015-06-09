@@ -1,16 +1,16 @@
 package util;
 
-public class StudentInfo {
+public class Student {
 	private String studentId;
 	private String name;
 	private String gender;
 	private String schoolName;
 	
-	public StudentInfo(){
+	public Student(){
 		
 	}
 	
-	public StudentInfo(String studentId, String name, String gender, String schoolName){
+	public Student(String studentId, String name, String gender, String schoolName){
 		this.studentId = studentId;
 		this.name = name;
 		this.gender = gender;

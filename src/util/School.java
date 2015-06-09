@@ -1,13 +1,13 @@
 package util;
 
-public class SchoolInfo {
+public class School {
 	private String schoolName;
 	private int creditRequirement;
-	public SchoolInfo(){
+	public School(){
 		
 	}
 	
-	public SchoolInfo(String schoolName, int creditRequirement){
+	public School(String schoolName, int creditRequirement){
 		this.schoolName = schoolName;
 		this.creditRequirement = creditRequirement;
 	}
