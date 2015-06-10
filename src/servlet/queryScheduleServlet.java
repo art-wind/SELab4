@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class queryScheduleServlet extends HttpServlet {
+public class QueryScheduleServlet extends HttpServlet {
 
 	/**
 	 * Constructor of the object.
 	 */
-	public queryScheduleServlet() {
+	public QueryScheduleServlet() {
 		super();
 	}
 

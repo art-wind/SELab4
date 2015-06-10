@@ -2,7 +2,7 @@ package responses;
 
 import java.io.Serializable;
 
-import util.Student;
+import beans.Student;
 
 import com.alibaba.fastjson.JSON;
 

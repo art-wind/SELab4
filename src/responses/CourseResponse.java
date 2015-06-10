@@ -3,7 +3,7 @@ package responses;
 import java.io.Serializable;
 import java.util.List;
 
-import util.Course;
+import beans.Course;
 
 import com.alibaba.fastjson.JSON;
 

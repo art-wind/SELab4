@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class clearDataServlet extends HttpServlet {
+public class ClearDataServlet extends HttpServlet {
 
 	/**
 	 * Constructor of the object.
 	 */
-	public clearDataServlet() {
+	public ClearDataServlet() {
 		super();
 	}
 

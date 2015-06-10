@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class queryCourseByIdServlet extends HttpServlet {
+public class QueryCourseByIdServlet extends HttpServlet {
 
 	/**
 	 * Constructor of the object.
 	 */
-	public queryCourseByIdServlet() {
+	public QueryCourseByIdServlet() {
 		super();
 	}
 

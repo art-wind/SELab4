@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class addSchoolInfoServlet extends HttpServlet {
+public class AddSchoolInfoServlet extends HttpServlet {
 
 	/**
 	 * Constructor of the object.
 	 */
-	public addSchoolInfoServlet() {
+	public AddSchoolInfoServlet() {
 		super();
 	}
 
