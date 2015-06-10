@@ -1,6 +1,6 @@
-package dispatchers;
+package parameters;
 
-public class QueryScheduleDispatcher {
+public class QueryScheduleDispatcherParameter {
 
     public static final String TOPIC = "queryScheduleDispatcherParameter";
     

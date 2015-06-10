@@ -1,5 +1,8 @@
 package responders;
 
+import beans.Course;
+import logics.AddCourseInfo;
+import responses.StateResponse;
 import cn.edu.fudan.se.messager.Messager;
 
 public class AddCourseInfoResponder extends Messager {
@@ -12,7 +15,11 @@ public class AddCourseInfoResponder extends Messager {
 
 	@Override
 	protected boolean onReceiveMessage(String messageId, Object messageBody) {
-		// TODO Auto-generated method stub
+		if (!(messageBody instanceof Course))
+			return false;
+		Course courseInfo = (Course) messageBody;
+		String result = AddCourseInfo.addCourseInfo(courseInfo);
+		StateResponse sr = new StateResponse(id, result);
 		return false;
 	}
 
