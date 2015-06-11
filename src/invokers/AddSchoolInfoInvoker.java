@@ -13,6 +13,7 @@ public class AddSchoolInfoInvoker extends Messager{
 	@Override
 	protected boolean onReceiveMessage(String messageId, Object messageBody) {
 		// TODO Auto-generated method stub
+//		if(messageBody instanceof )
 		return false;
 	}
 
