@@ -23,5 +23,9 @@ public class Time{
 		this.period = period;
 	}
 	
+	public boolean same(Time time2){
+		return this.period == time2.period && this.weekday == time2.weekday;
+	}
+	
 	
 }
