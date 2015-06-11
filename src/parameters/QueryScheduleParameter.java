@@ -1,5 +1,7 @@
 package parameters;
 
+import util.Parameter;
+
 public class QueryScheduleParameter extends Parameter {
 
     public static final String TOPIC = "queryScheduleParameter";

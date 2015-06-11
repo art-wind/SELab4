@@ -1,4 +1,6 @@
-package parameters;
+package dparameter;
+
+import util.Parameter;
 
 public class QueryCourseByIdDispatcherParameter extends Parameter {
 

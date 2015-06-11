@@ -1,6 +1,8 @@
-package parameters;
+package dparameter;
 
-public class QueryScheduleDispatcherParameter {
+import util.Parameter;
+
+public class QueryScheduleDispatcherParameter extends Parameter{
 
     public static final String TOPIC = "queryScheduleDispatcherParameter";
     

@@ -1,18 +1,19 @@
 package responders;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.List;
 
 import logics.QueryCourseByTime;
 import parameters.QueryCourseByTimeParameter;
 import responses.CourseResponse;
+import util.Messager;
 import beans.Course;
 import beans.Time;
-
 import com.alibaba.fastjson.JSON;
 
-import cn.edu.fudan.se.messager.Messager;
-
-public class QueryCourseByTimeResponsor extends Messager {
+public class QueryCourseByTimeResponsor extends Messager implements Runnable{
 	private int responsorId;
 
 	public QueryCourseByTimeResponsor(int responsorId) {
@@ -30,4 +31,20 @@ public class QueryCourseByTimeResponsor extends Messager {
 		return true;
 	}
 
+	@Override
+	public void run() {
+		start(QueryCourseByTimeParameter.REQUEST_TAG);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        while (true) {
+            try {
+                if ("stop".equals(reader.readLine())) {
+                    break;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        stop();
+	}
+	
 }

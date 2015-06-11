@@ -4,6 +4,7 @@ import cn.edu.fudan.se.Parameter;
 import cn.edu.fudan.se.bean.Lecture;
 import cn.edu.fudan.se.bean.LectureRequest;
 import cn.edu.fudan.se.bean.LectureResponse;
+
 import com.alibaba.rocketmq.client.producer.SendResult;
 
 import java.io.BufferedReader;
@@ -11,6 +12,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Vector;
 import java.util.concurrent.ConcurrentHashMap;
+
+import util.Messager;
 
 /**
  * Created by Dawnwords on 2015/5/23.

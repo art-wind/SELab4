@@ -1,6 +1,6 @@
 package invokers;
 
-import cn.edu.fudan.se.messager.Messager;
+import util.Messager;
 
 public class AddStudentInfoInvoker extends Messager {
 

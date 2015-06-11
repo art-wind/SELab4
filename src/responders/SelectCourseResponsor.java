@@ -1,15 +1,17 @@
 package responders;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 import logics.SelectCourse;
 import parameters.SelectCourseParameter;
 import responses.StateResponse;
+import util.Messager;
 import beans.StudentCourse;
-
 import com.alibaba.fastjson.JSON;
 
-import cn.edu.fudan.se.messager.Messager;
-
-public class SelectCourseResponsor extends Messager {
+public class SelectCourseResponsor extends Messager implements Runnable {
 	private int responsorId;
 
 	public SelectCourseResponsor(int responsorId) {
@@ -24,6 +26,22 @@ public class SelectCourseResponsor extends Messager {
 		StateResponse cr = new StateResponse(messageId, result);
 		sendMessage(SelectCourseParameter.RESPONSE_TAG, SelectCourseParameter.RESPONSOR_KEY, cr);
 		return true;
+	}
+
+	@Override
+	public void run() {
+		start(SelectCourseParameter.REQUEST_TAG);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        while (true) {
+            try {
+                if ("stop".equals(reader.readLine())) {
+                    break;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        stop();
 	}
 
 }

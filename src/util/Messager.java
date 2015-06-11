@@ -1,4 +1,4 @@
-package cn.edu.fudan.se.messager;
+package util;
 
 import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
 import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
